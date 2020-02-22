@@ -11,7 +11,6 @@ atu = []
 
 def placas():
     """
-    :author Roberto Weller
     :return Não um retorno especifico, mas um precesso simples de saida e entrada de carros num estacionnamento:
     """
     agora = datetime.datetime.now()
