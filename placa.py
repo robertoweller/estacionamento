@@ -14,6 +14,8 @@ def placas():
     :return Não um retorno especifico, mas um precesso simples de saida e entrada de carros num estacionnamento:
     """
     agora = datetime.datetime.now()
+
+    # Tudo vai rodar dentro de um looping.
     while True:
 
         # Se for usado segundos.
