@@ -10,7 +10,10 @@ atu = []
 
 
 def placas():
-    global soma
+    """
+    :author Roberto Weller
+    :return Não um retorno especifico, mas um precesso simples de saida e entrada de carros num estacionnamento:
+    """
     agora = datetime.datetime.now()
     while True:
 
@@ -40,9 +43,9 @@ def placas():
                     lista_de_entradas.remove(lista_de_entradas[acha + i])
 
             except IndexError:
-                print('Nenhum carro entrou ainda.')
-        else:
+                pass
 
+        if placa not in lista_de_entradas and placa != 'saidas':
             lista_de_entradas.append(placa)
             lista_de_entradas.append(agora_str)
 
@@ -51,11 +54,12 @@ def placas():
             for uu in atu:
                 print(f'{uu}')
 
-        # Me atualiza os carros que não saiaram ainda.
         at.append(f'O carro {lista_de_entradas[len(lista_de_entradas)-2]} entrou as {lista_de_entradas[len(lista_de_entradas) - 1]} e não saiu ainda...')
+        # print(atu)
         # for u in at:
         # print(u)
 
+        # Me atualiza os carros que não saiaram ainda.
         # print(f'O carro de placa {lista_de_entradas[u]} entrou as {lista_de_entradas[u]} não saiu ainda.')
         # print(todas)
         # print(lista_de_entradas)
